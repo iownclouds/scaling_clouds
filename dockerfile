@@ -30,7 +30,10 @@ RUN apt-get install oracle-java8-set-default
 run apt-get install -y git 
 
 #Clone the project
-run git clone https://github.com/iownclouds/scaling_clouds.git
+run mkdir scaling_clouds
+run cd scaling_clouds && git clone https://github.com/iownclouds/scaling_clouds.git
+WORKDIR scaling_clouds/scaling_clouds.git
+run git pull
 #Pull the code if there are any latest updates
 
 
@@ -41,6 +44,4 @@ ADD docker-entrypoint.sh /scaling_clouds/helloworldjava/docker-entrypoint.sh
 # Set script to be executable
 RUN chmod -R a+rwx /scaling_clouds
 #ENTRYPOINT //docker-entrypoint.sh
-CMD ["cd","/scaling_clouds"]
-CMD ["git","pull"]
 CMD ["/bin/sh","/scaling_clouds/helloworldjava/docker-entrypoint.sh"]
