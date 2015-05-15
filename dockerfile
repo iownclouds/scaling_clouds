@@ -38,5 +38,5 @@ COPY docker-entrypoint.sh /scaling_clouds/helloworldjava/docker-entrypoint.sh
 
 # Set script to be executable
 RUN chmod +x /scaling_clouds/helloworldjava/docker-entrypoint.sh
-ENTRYPOINT /scaling_clouds/helloworldjava/docker-entrypoint.sh
-#CMD ["/bin/bash", "/scaling_clouds/helloworldjava/docker-entrypoint.sh"]
+#ENTRYPOINT /scaling_clouds/helloworldjava/docker-entrypoint.sh
+CMD ["/bin/bash", "/scaling_clouds/helloworldjava/docker-entrypoint.sh"]
