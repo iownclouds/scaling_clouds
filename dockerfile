@@ -37,6 +37,6 @@ RUN cd scaling_clouds
 ADD docker-entrypoint.sh /scaling_clouds/helloworldjava/docker-entrypoint.sh
 
 # Set script to be executable
-RUN chmod -R +rwx /scaling_clouds
+RUN chmod -R a+rwx /scaling_clouds
 #ENTRYPOINT /scaling_clouds/helloworldjava/docker-entrypoint.sh
 CMD ["/scaling_clouds/helloworldjava/docker-entrypoint.sh"]
