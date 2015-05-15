@@ -32,8 +32,8 @@ run apt-get install -y git
 #Clone the project
 run git clone https://github.com/iownclouds/scaling_clouds.git
 #Pull the code if there are any latest updates
-cd /scaling_clouds
-git pull
+RUN cd /scaling_clouds
+RUN git pull
 
 # Copy entrypoint script into the image
 RUN cd scaling_clouds
