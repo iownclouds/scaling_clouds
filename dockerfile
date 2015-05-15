@@ -38,4 +38,5 @@ ADD docker-entrypoint.sh /docker-entrypoint.sh
 
 # Set script to be executable
 RUN chmod +x /docker-entrypoint.sh
-ENTRYPOINT ["/docker-entrypoint.sh"]
+#ENTRYPOINT ["/docker-entrypoint.sh"]
+CMD ["/bin/bash", "/docker-entrypoint.sh"]
