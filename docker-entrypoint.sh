@@ -1,3 +1,5 @@
 #!/usr/bin/bash
-javac Hello.java
+echo $PATH
+
+javac /scaling_clouds/helloworldjava/Hello.java
 java Hello
