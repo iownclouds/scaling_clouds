@@ -31,13 +31,13 @@ run apt-get install -y git
 
 #Clone the project
 run git clone https://github.com/iownclouds/scaling_clouds.git
-WORKDIR scaling_clouds
-run git pull origin master
+#WORKDIR scaling_clouds
+#run git pull origin master
 #Pull the code if there are any latest updates
 
 
 # Copy entrypoint script into the image
-#RUN cd scaling_clouds
+RUN cd scaling_clouds
 ADD docker-entrypoint.sh /scaling_clouds/helloworldjava/docker-entrypoint.sh
 
 # Set script to be executable
