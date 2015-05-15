@@ -34,7 +34,7 @@ run git clone https://github.com/iownclouds/scaling_clouds.git
 
 # Copy entrypoint script into the image
 RUN cd scaling_clouds
-ADD docker-entrypoint.sh /scaling_clouds/docker-entrypoint.sh
+ADD docker-entrypoint.sh /scaling_clouds/helloworldjava/docker-entrypoint.sh
 
 # Set script to be executable
 RUN chmod +x /scaling_clouds/helloworldjava/docker-entrypoint.sh
