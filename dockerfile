@@ -33,5 +33,5 @@ run apt-get install -y git
 run git clone https://github.com/iownclouds/scaling_clouds.git
 
 # Copy entrypoint script into the image
-RUN cd helloworldjava
+RUN cd scaling_clouds/helloworldjava
 ENTRYPOINT ["/run.sh"]
