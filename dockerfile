@@ -30,7 +30,7 @@ RUN apt-get install oracle-java8-set-default
 run apt-get install -y git 
 
 #Clone the project
-WORKDIR /
+WORKDIR /scaling_clouds
 run git clone https://github.com/iownclouds/scaling_clouds.git . && git checkout 
 
 #run git pull origin master
