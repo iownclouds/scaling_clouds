@@ -32,6 +32,7 @@ run apt-get install -y git
 #Clone the project
 WORKDIR /
 run git init
+run git fetch origin
 run git clone https://github.com/iownclouds/scaling_clouds.git $WORKDIR && git checkout master
 
 #run git pull origin master
